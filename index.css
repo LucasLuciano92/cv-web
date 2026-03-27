@@ -170,19 +170,17 @@ i {
 .progreso {
     height: 10px;
     border-radius: 10px;
-    width: 0;
-    transition: width 1.5s ease;
 }
+
+/* valores normales */
+.html { width: 80%; background: #e34c26; }
+.css { width: 70%; background: #264de4; }
+.js { width: 60%; background: #f0db4f; }
 
 /* cuando se activa */
 .progreso.visible {
     width: inherit;
 }
-
-/* valores reales */
-.html { width: 80%; background: #e34c26; }
-.css { width: 70%; background: #264de4; }
-.js { width: 60%; background: #f0db4f; }
 
 /* niveles */
 .html { width: 80%; background: #e34c26; }
@@ -290,15 +288,3 @@ body.dark .card {
     background-color: #1e1e1e;
 }
 
-/* estado inicial */
-section {
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-/* cuando aparece */
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: 0.6s;
-}
