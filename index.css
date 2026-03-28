@@ -1,3 +1,12 @@
+.titulo {
+    color: var(--color-principal);
+    font-size: 14px;
+}
+
+h2 {
+    color: var(--color-principal);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -40,16 +49,16 @@ section:hover {
     transform: translateY(-5px);
 }
 
-h2 {
-    color: #007BFF;
-}
-
 body.dark .header {
     background-color: #1e1e1e;
 }
 
 body.dark .nav a {
     color: white;
+}
+
+body.dark .titulo {
+    color: #00bfff;
 }
 
 button {
@@ -288,3 +297,10 @@ body.dark .card {
     background-color: #1e1e1e;
 }
 
+:root {
+    --color-principal: #007BFF;
+}
+
+h2 {
+    color: var(--color-principal);
+}
