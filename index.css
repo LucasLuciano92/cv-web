@@ -297,6 +297,3 @@ body.dark .card {
     --color-principal: #007BFF;
 }
 
-h2 {
-    color: var(--color-principal);
-}
