@@ -1,32 +1,31 @@
 console.log("JS funcionando");
 
-function mostrarMensaje() {
-    const mensaje = document.getElementById("mensaje");
-    mensaje.textContent = "Gracias por tu interés. ¡Te contactaré pronto!";
+function showMessage() {
+    const message = document.getElementById("message");
+    message.textContent = "Gracias por tu interés. ¡Te contactaré pronto!";
 }
 
-function toggleSeccion(id) {
-    const seccion = document.getElementById(id);
+function toggleSection(id) {
+    const section = document.getElementById(id);
 
-    if (seccion.style.display === "none" || seccion.style.display === "") {
-        seccion.style.display = "block";
+    if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "block";
     } else {
-        seccion.style.display = "none";
+        section.style.display = "none";
     }
 }
 
-function cambiarModo() {
+function toggleDarkMode() {
     console.log("Modo oscuro activado");
     document.body.classList.toggle("dark");
 }
 
-
-function validarFormulario() {
-    const nombre = document.getElementById("nombre").value;
+function validateForm() {
+    const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const mensaje = document.getElementById("mensajeTexto").value;
+    const message = document.getElementById("messageText").value;
 
-    if (nombre === "" || email === "" || mensaje === "") {
+    if (name === "" || email === "" || message === "") {
         alert("Por favor completá todos los campos");
         return false;
     }
@@ -39,5 +38,3 @@ function validarFormulario() {
     alert("Mensaje enviado correctamente");
     return true;
 }
-
-
