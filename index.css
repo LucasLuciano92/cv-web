@@ -1,14 +1,29 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+/* Title */
 .titulo {
     margin: 0;
     font-size: 14px;
 }
 
+/* Base layout */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
@@ -16,6 +31,7 @@ header {
     padding: 20px;
 }
 
+/* Sections */
 section {
     background: white;
     margin: 20px 0;
@@ -23,12 +39,10 @@ section {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
-}
-
-section {
     animation: aparecer 0.6s ease;
 }
 
+/* Fade-in animation */
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -40,9 +54,15 @@ section {
     }
 }
 
-/* EFECTO HOVER */
+/* Hover effect */
 section:hover {
     transform: translateY(-5px);
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #121212;
+    color: white;
 }
 
 body.dark .header {
@@ -57,21 +77,6 @@ body.dark .titulo {
     color: #00bfff;
 }
 
-button {
-    padding: 10px 15px;
-    background: linear-gradient(90deg, #007BFF, #00bfff);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-body.dark {
-    background-color: #121212;
-    color: white;
-}
-
 body.dark section {
     background-color: #1e1e1e;
     box-shadow: 0 4px 10px rgba(255,255,255,0.1);
@@ -83,23 +88,17 @@ body.dark input {
     border: 1px solid #555;
 }
 
-/* 🔥 CENTRAR CONTENIDO */
-body {
-    max-width: 800px;
-    margin: auto;
-}
-
 body.dark i {
     color: #00bfff;
 }
 
-/* 🔥 HEADER MÁS PRO */
-header {
-    border-radius: 0 0 15px 15px;
-}
-
-/* 🔥 BOTONES MEJORADOS */
+/* Buttons */
 button {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #007BFF, #00bfff);
+    color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -109,7 +108,18 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* 🔥 INPUTS MÁS LINDOS */
+/* Centered layout */
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Header layout */
+header {
+    border-radius: 0 0 15px 15px;
+}
+
+/* Input fields */
 input {
     padding: 8px;
     border-radius: 5px;
@@ -117,12 +127,12 @@ input {
     width: 200px;
 }
 
-/* 🔥 ESPACIADO */
+/* Spacing for form elements */
 button, input {
     margin-top: 5px;
 }
 
-/* 🔥 HEADER MODERNO */
+/* Header container */
 .header {
     display: flex;
     justify-content: space-between;
@@ -131,9 +141,12 @@ button, input {
     padding: 15px 30px;
     position: sticky;
     top: 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* LOGO */
+/* Logo */
 .logo {
     font-weight: 600;
     font-size: 22px;
@@ -142,10 +155,12 @@ button, input {
     -webkit-text-fill-color: transparent;
 }
 
+/* Icons */
 i {
     margin-right: 8px;
 }
 
+/* Profile section */
 .perfil {
     text-align: center;
 }
@@ -154,17 +169,16 @@ i {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    object-fit: cover; /* 🔥 IMPORTANTE */
+    object-fit: cover; /* Maintain image proportions */
     border: 4px solid #007BFF;
-}
-
-.perfil img {
     transition: 0.3s;
 }
 
 .perfil img:hover {
     transform: scale(1.1);
 }
+
+/* Progress bars */
 .barra {
     width: 100%;
     background: #ddd;
@@ -177,23 +191,17 @@ i {
     border-radius: 10px;
 }
 
-/* valores normales */
+/* Skill levels */
 .html { width: 80%; background: #e34c26; }
 .css { width: 70%; background: #264de4; }
 .js { width: 60%; background: #f0db4f; }
 
-/* cuando se activa */
+/* Active state */
 .progreso.visible {
     width: inherit;
 }
 
-/* niveles */
-.html { width: 80%; background: #e34c26; }
-.css { width: 70%; background: #264de4; }
-.js { width: 60%; background: #f0db4f; }
-
-
-/* NAV */
+/* Navigation */
 .nav a {
     margin: 0 10px;
     text-decoration: none;
@@ -201,12 +209,12 @@ i {
     font-size: 14px;
 }
 
-/* HOVER */
+/* Navigation hover */
 .nav a:hover {
     color: #325477;
 }
 
-/* BOTÓN */
+/* Header button */
 .header button {
     background: none;
     border: none;
@@ -214,21 +222,12 @@ i {
     cursor: pointer;
 }
 
-.header {
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.header {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* 🔥 CONTACTO MÁS GRANDE */
+/* Contact section */
 .contacto {
     padding: 30px;
 }
 
-/* INPUTS Y TEXTAREA MÁS GRANDES */
+/* Form inputs and textarea */
 .contacto input,
 .contacto textarea {
     width: 100%;
@@ -238,16 +237,17 @@ i {
     border: 1px solid #ccc;
 }
 
-/* TEXTAREA */
+/* Textarea settings */
 textarea {
     resize: none;
 }
 
-/* BOTÓN MÁS SEPARADO */
+/* Button spacing */
 .contacto button {
     margin-top: 10px;
 }
 
+/* Responsive design */
 @media (max-width: 600px) {
     .header {
         flex-direction: column;
@@ -265,10 +265,12 @@ textarea {
     }
 }
 
+/* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
 
+/* Projects layout */
 .proyectos {
     display: flex;
     gap: 15px;

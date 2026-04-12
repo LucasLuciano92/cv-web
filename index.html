@@ -5,16 +5,15 @@
     <title>Mi CV</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
 
 <header class="header">
     <div class="logo">Richard Tex Tex</div>
-    <p class="titulo">Tecnico Universitario en Programacion - UTN</p>
+    <p class="titulo">Estudiante de Programación</p>
 <div class="perfil">
-    <img src="https://elpescadazo.wordpress.com/wp-content/uploads/2014/09/53ba91d720881_4fedfwe.jpg" alt="Richard Tex Tex">
+    <img src="img/fotoPerfil.jpg.jpg" alt="Richard Tex Tex">
 </div>
 
     <nav class="nav">
@@ -26,7 +25,7 @@
 
     
 
-    <button onclick="cambiarModo()">🌙</button>
+    <button onclick="toggleDarkMode()">🌙</button>
 </header>
 
     <section id="sobre">
@@ -42,7 +41,7 @@
         <ul>
     <li>
         Desarrollador Web en 
-        <a href="https://www.microsoft.com" target="_blank">Microsoft</a>
+        <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer">Microsoft</a>
     </li>
         </ul>
     </section>
@@ -50,7 +49,7 @@
     <section id="educacion">
         <h2>Educación</h2>
         <ul>
-            <li><i class="fa-solid fa-graduation-cap"></i> Tecnicatura Universitaria en Programacion - UTN </li>
+            <li><i class="fa-solid fa-graduation-cap"></i> Técnico en Universitario en Programación - UTN </li>
         </ul>
     </section>
 
@@ -91,16 +90,16 @@
         <a href="mailto:richard.textex@gmail.com">richard.textex@gmail.com</a>
     </p>
 
-    <p id="mensaje"></p>
+    <p id="message"></p>
 
-    <button onclick="mostrarMensaje()">Contactarme</button>
-    
-    <form onsubmit="return validarFormulario()">
-        <input type="text" id="nombre" placeholder="Tu nombre" required><br><br>
-        <input type="email" id="email" placeholder="Tu email" required><br><br>
-    
-        <textarea id="mensajeTexto" placeholder="Escribí tu mensaje..." rows="5" required></textarea><br><br>
-    
+    <button onclick="showMessage()">Contactarme</button>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Tu nombre"><br><br>
+        <input type="email" id="email" placeholder="Tu email"><br><br>
+
+        <textarea id="messageText" placeholder="Escribí tu mensaje..." rows="5"></textarea><br><br>
+
         <button type="submit">Enviar</button>
     </form>
 </section>
