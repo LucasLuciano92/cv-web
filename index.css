@@ -297,3 +297,29 @@ body.dark .card {
     --color-principal: #007BFF;
 }
 
+/* Progress element styling */
+progress {
+    width: 100%;
+    height: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+}
+
+/* fondo */
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* valor */
+progress::-webkit-progress-value {
+    background-color: #007BFF;
+    border-radius: 10px;
+}
+
+/* firefox */
+progress::-moz-progress-bar {
+    background-color: #007BFF;
+    border-radius: 10px;
+}
