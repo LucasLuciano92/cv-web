@@ -1,7 +1,3 @@
-:root {
-    --color-principal: #007BFF;
-}
-
 /* Title */
 .titulo {
     margin: 0;
@@ -285,4 +281,8 @@ html {
 
 body.dark .card {
     background-color: #1e1e1e;
+}
+
+:root {
+    --color-principal: #007BFF;
 }
