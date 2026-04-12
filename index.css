@@ -189,12 +189,13 @@ i {
 .progreso {
     height: 10px;
     border-radius: 10px;
+    background: #007BFF;
 }
 
 /* Skill levels */
-.html { width: 80%; background: #e34c26; }
-.css { width: 70%; background: #264de4; }
-.js { width: 60%; background: #f0db4f; }
+.html { width: 80%; }
+.css { width: 70%; }
+.js { width: 60%; }
 
 /* Active state */
 .progreso.visible {
